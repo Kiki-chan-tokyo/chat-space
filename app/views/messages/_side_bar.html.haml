@@ -1,0 +1,41 @@
+.wrapper
+  .chat-side
+    .side-header 
+      .side-header__box
+        .side-header__box__user-name
+        .side-header__box__menu
+          .side-header__box__menu__new-group
+          =link_to "#", class: "side-header__btn side-header__btn--newgroup" do
+              = icon('fas', 'edit')
+          .side-header__box__menu__edit-user
+          =link_to "#", class: "side-header__btn side-header__btn--edituser" do
+              = icon('fas', 'cog')
+    .groups
+      .group
+        .group__group-name
+        .group__latest-message
+  .chat-main 
+    .main-header
+      .main-header__left-box
+        .main-header__left-box__current-group
+          同期
+        .main-header__left-box__member-list
+          Member
+          .main-header__left-box__member-list__member
+            kiki
+        .main-header__edit-btn
+          Edit
+    .messages
+      .message
+        .message__upper-info
+          .message__upper-info__talker
+          .message__upper-info__date
+        .message__text
+    .form
+      .new_message
+        .input-box
+          .input-box__text
+            .input-box__image
+              .fa-image
+              .input-box__image__file
+        .submit-btn
